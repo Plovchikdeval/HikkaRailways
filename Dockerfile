@@ -27,13 +27,13 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
 RUN mkdir /data
 
 # Клонирование репозитория
-RUN git clone https://github.com/coddrago/Heroku /Heroku
+RUN git clone https://github.com/hikariatama/Hikka /Hikka
 
 # Установка рабочей директории
 
-WORKDIR /Heroku
+WORKDIR /Hikka
 
-RUN cd /Heroku && git pull origin master
+RUN cd /Hikka && git pull origin master
 
 
 # Установка зависимостей Python
